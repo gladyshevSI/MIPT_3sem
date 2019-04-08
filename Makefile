@@ -1,7 +1,7 @@
-all: project
+all: a.out
 
-project: main3.o head2.o
-	c++ main3.o head2.o -o project
+a.out: main3.o head2.o
+	c++ main3.o head2.o -o a.out
 
 main3.o: main3.cpp
 	c++ -c main3.cpp
